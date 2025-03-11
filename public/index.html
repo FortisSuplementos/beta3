@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles.css'>
+    <title>Fortiss</title>
+</head>
+<body>
+    <div class="scroller">
+        <header id="navbarbox">
+            <div class="logo">
+                    <button class="navBtn" id="homebtn">Inicio</button>
+                    <button class="navBtn" id="buybtn">Tienda</button>
+                </div>
+                <div class="account" id="accountBtn" onclick="goTo2()"></div>
+                <div class="menu"></div>
+            </header>
+            <nav class="nav">
+                <div  class="navbarbox" id="navbarbox">
+                    <button class="navBtn" id="nav_homebtn">Inicio</button>
+                <button class="navBtn" id="nav_buybtn">Tienda</button>
+            </div>
+        </nav>
+    </div>
+    
+    
+    <div class="news_container">
+        <div class="news">
+            <div class="news_item">
+                <img src="assets/assets/running person.jpg">
+                <h2>Sueña sin <span class="span_mtv">miedos</span><br>
+                    Entrena sin <span class="span_mtv">limites</span></h2>
+            </div>
+
+            <div class="news_item">
+                <div class="dinamic">
+                    <div class="object1"></div>
+                    <div class="object2"></div>
+                    <div class="object3"></div>
+                </div>
+                <h2>Vea Lo mas <a href="store.html#bestsellers" class="span_rmk">Destacado</a><br>de la semana</h2>
+            </div>
+
+            
+            <div class="news_item">
+                <img src="assets/assets/store.webp">
+                <h2>Disponibles a partir<br> del proximo<a class="a_" href='contact.html#contact'> lunes</a></h2>
+            </div>
+            
+        </div>
+        <button class="news_button prev" onclick="prevSlide()">&#10094;</button>
+        <button class="news_button next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    
+    
+    <div style="text-align: center; justify-content: center; padding: 30px;">
+        <div class="intro">
+            <h1>Estas Preparado?<br> aqui comienza tu viaje
+            </h1>
+            <button id="introBtn" class="introBtn" onclick="goTo()">Vamos!</button>
+        </div>
+    </div>
+    
+    <section class="hero">
+        <section class="hero_intro">
+            <div class="box">
+                <div class="content"></div>
+            </div>
+
+            <h2 style="transform: translateY(-190%); justify-self: start;">Descubre</h2>
+            <h2>
+                las<a class="span_rmk" href="#novedades"> novedades</a><br>
+                los<a class="span_rmk" href="#servicios"> servicios</a><br>
+                los<a class="span_rmk" href="#proyectos"> proyectos</a><br>
+            </h2>
+            
+            <div class="box" style="transform: scaleX(-1);  margin-top: 120px;">
+                <div class="content"></div>
+            </div>
+
+            <!--<button class="hero_introBtn">Necesitas ayuda?</button>-->
+        </section>
+
+
+        <h2 class="bestsellersheader">Ideal para <br> <span class="span_rmk">principiantes</span> </h2>
+        <div class="bestsellers">
+            <div class="container">
+                <img src='assets/creatines/IMG_5627.webp' alt='img' class="imagen">
+                <div class="texto">
+                    Creatina Monohidratada Nutricost <br>
+                    100 servicios <br>
+                    5 gramos de creatina pura por servicio
+                </div>
+                <button onclick="seeProduct()" class="addToCart">Ver</button>
+                <h3 class="price">38$</h3>
+            </div>
+            
+            <div class="container">
+                <img src='assets/proteins/Optimun Nutrition Whey Protein.webp' alt='img' class="imagen">
+                <div class="texto">
+                    Llega la reina de las proteinas <br>
+                    Optimun Nutrition Whey Protein <br>
+                    29 servicios <br>
+                </div>
+                <button onclick="seeProduct()" class="addToCart">Ver</button>
+                <h3 class="price">45$</h3>
+            </div>
+            
+            <div class="container">
+                <img src='assets/proteins/SixStar Protein.jpg' alt='img' class="imagen">
+                <div class="texto">
+                    Llega la reina de las proteinas <br>
+                    Optimun Nutrition Whey Protein <br>
+                    29 servicios <br>
+                </div>
+                <button onclick="seeProduct()" class="addToCart">Ver</button>
+                <h3 class="price">45$</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="help">
+        <div class="help_intro">
+            <h1>Necesitas ayuda? <br> Eres nuevo en esto?
+            </h1>
+            <button id="introBtn" class="negativeBtn" onclick="goTo()">Contactenos!</button>
+        </div>
+    </div>
+    
+    <section class="us">
+        
+        <div class="us_intro">
+            <h1>Donde la excelencia <span class="span_rmk">mide...</span> </h1>
+            <p>Siempre hemos dado lo mejor para nuestros clientes, la maxima calidad 
+                y el maximo servicio, y siempre sera asi
+            </p>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+            <div class="valorations">
+                <div class="card">
+                    <div class="card_profile" style="background-image: url(assets/else/guy.jpg);"></div>
+                    <div class="card_title">Bolano</div>
+                    <div class="card_descripion">Muy bueno,
+                        super recomendable
+                    </div>
+                    <div class="rate">
+        
+                        <label for="star5" title="text" style="fill: #e58e09;">
+                            <svg
+                                viewBox="0 0 576 512"
+                                height="0.5em"
+                                class="star-solid">
+                                <path
+                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path>
+                            </svg>
+                        </label>
+        
+                        <label for="star4" title="text" style="fill: #e58e09;">
+                        <svg
+                                viewBox="0 0 576 512"
+                                height="0.5em"
+                                class="star-solid">
+                                <path
+                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path>
+                            </svg>
+                        </label>
+                        
+                        <label for="star3" title="text" style="fill: #e58e09;">
+                            <svg
+                                viewBox="0 0 576 512"
+                                height="0.5em"
+                                class="star-solid">
+                                <path
+                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path>
+                            </svg>
+                        </label>
+        
+                        <label for="star2" title="text" style="fill: #e58e09;">
+                            <svg
+                                viewBox="0 0 576 512"
+                                height="0.5em"
+                                class="star-solid">
+                                <path
+                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path>
+                            </svg>
+                        </label>
+                        
+                        <label for="star1" title="text" style="fill: #e58e09;">
+                            <svg
+                                viewBox="0 0 576 512"
+                                height="0.5em"
+                                class="star-solid">
+                                <path
+                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path>
+                            </svg>
+                        </label> 
+                    </div>    
+                </div>
+            
+                <div class="card">
+                    <div class="card_profile" style="background-image: url(assets/assets/accounts.png);"></div>
+                        <div class="card_title">Anonimo</div>
+                        <div class="card_descripion">Les falta mucho
+                            por mejorar..., pero nada mal
+                        </div>    
+                        <div class="rate">
+        
+                            <label for="star5" title="text" style="fill: #e58e09;">
+                                <svg
+                                    viewBox="0 0 576 512"
+                                    height="0.5em"
+                                    class="star-solid">
+                                    <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                    ></path>
+                                </svg>
+                            </label>
+        
+                            <label for="star4" title="text" style="fill: #e58e09;">
+                            <svg
+                                    viewBox="0 0 576 512"
+                                    height="0.5em"
+                                    class="star-solid">
+                                    <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                    ></path>
+                                </svg>
+                            </label>
+                            
+                            <label for="star3" title="text" style="fill: #e58e09;">
+                                <svg
+                                    viewBox="0 0 576 512"
+                                    height="0.5em"
+                                    class="star-solid">
+                                    <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                    ></path>
+                                </svg>
+                            </label>
+        
+                            <label for="star2" title="text" style="fill: #e58e09;">
+                                <svg
+                                    viewBox="0 0 576 512"
+                                    height="0.5em"
+                                    class="star-solid">
+                                    <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                    ></path>
+                                </svg>
+                            </label>
+                            
+                            <label for="star1" title="text">
+                                <svg
+                                viewBox="0 0 576 512"
+                                    height="0.5em"
+                                    class="star-solid">
+                                    <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                    ></path>
+                                </svg>
+                            </label> 
+                        </div>
+                </div>
+                
+                <div class="card">
+                        <div class="card_profile" style="background-image: url(assets/assets/accounts.png);"></div>
+                        <div class="card_title">user_8723</div>
+                        <div class="card_descripion">Simplemente los mejores 
+                            actualmente
+                        </div>    
+                        <div class="rate">
+            
+                                <label for="star5" title="text" style="fill: #e58e09;">
+                                    <svg
+                                        viewBox="0 0 576 512"
+                                        height="0.5em"
+                                        class="star-solid">
+                                        <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                        ></path>
+                                    </svg>
+                                </label>
+            
+                                <label for="star4" title="text" style="fill: #e58e09;">
+                                <svg
+                                        viewBox="0 0 576 512"
+                                        height="0.5em"
+                                        class="star-solid">
+                                        <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                        ></path>
+                                    </svg>
+                                </label>
+                                
+                                <label for="star3" title="text" style="fill: #e58e09;">
+                                    <svg
+                                        viewBox="0 0 576 512"
+                                        height="0.5em"
+                                        class="star-solid">
+                                        <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                        ></path>
+                                    </svg>
+                                </label>
+            
+                                <label for="star2" title="text"style="fill: #e58e09;">
+                                    <svg
+                                        viewBox="0 0 576 512"
+                                        height="0.5em"
+                                        class="star-solid">
+                                        <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                        ></path>
+                                    </svg>
+                                </label>
+                                
+                                <label for="star1" title="text" style="fill: #e58e09;">
+                                    <svg
+                                        viewBox="0 0 576 512"
+                                        height="0.5em"
+                                        class="star-solid">
+                                        <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                        ></path>
+                                    </svg>
+                                </label> 
+                        </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card_profile" style="background-image: url(assets/assets/accounts.png);"></div>
+                        <div class="card_title">Marcus Theodore</div>
+                        <div class="card_descripion">Unbelieveable
+                        </div>
+                        <div class="rate">
+        
+                            <label for="star5" title="text" style="fill: #e58e09;">
+                                <svg
+                                    viewBox="0 0 576 512"
+                                    height="0.5em"
+                                    class="star-solid">
+                                    <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                    ></path>
+                                </svg>
+                            </label>
+        
+                            <label for="star4" title="text" style="fill: #e58e09;">
+                            <svg
+                                    viewBox="0 0 576 512"
+                                    height="0.5em"
+                                    class="star-solid">
+                                    <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                    ></path>
+                                </svg>
+                            </label>
+                            
+                            <label for="star3" title="text" style="fill: #e58e09;">
+                                <svg
+                                    viewBox="0 0 576 512"
+                                    height="0.5em"
+                                    class="star-solid">
+                                    <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                    ></path>
+                                </svg>
+                            </label>
+                            
+                            <label for="star2" title="text" style="fill: #e58e09;">
+                                <svg
+                                    viewBox="0 0 576 512"
+                                    height="0.5em"
+                                    class="star-solid">
+                                    <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                    ></path>
+                                </svg>
+                            </label>
+                            
+                            <label for="star1" title="text" style="fill: #e58e09;">
+                                <svg
+                                    viewBox="0 0 576 512"
+                                    height="0.5em"
+                                    class="star-solid">
+                                    <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                    ></path>
+                                </svg>
+                            </label> 
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <div class="bfbestsellers">
+        <h2><span class="span_rmk">...impulsados por</span></h2>
+        <div class="partners">
+            <a href="https://www.nutricost.com"><img src='assets/else/Nutricost-Logo.webp' alt='Nutricost Logo'></a>
+            <a href="https://www.optimumnutrition.com"><img src='assets/else/Optimum_Nutrition_Logo.jpg' alt='Op Logo'></a>
+            <a href="https://www.sixstarpro.com"><img src='assets/else/SixStar_Logo2.png' alt='SixStar Logo'></a>
+        </div>
+    </div>
+    
+    <!--<div class="aboutbkg">
+        <div class="about" id="about">
+            <h1>Sobre nosotros</h1>
+            <p>En Fortiss, nos dedicamos a la distribucion y venta de suplmentos
+                    de alta calidad. Fundados en 2024, nuestra mision ha sido siempre
+                    el bienestar del cliente y las relaciones calidad-precio.
+                </p>
+                <h3>Mision</h3>
+                <p>Ofrecer los suplementos alimenticios y deportivos que cumplan con los 
+                    mas altos estandares de calidad, proporcionando a nuestros clientes 
+                    productos efectivos, seguros y confiables. Nos comprometemos a trabajar
+                    con honestidad y transparencia en todo lo que hacemos.
+                </p>
+                <h3>Vision</h3>
+                <p>Convertirnos en una empresa reconocida en Cuba por la calidad de el 
+                    trabajo y el servicio al cliente. Buscamos impactar positivamente
+                    en la vida de las personas y la sociedad ofreciendoles soluciones
+                    nutricionales que apoyen su bienestar general.
+                </p>
+            </div>
+        </div>-->
+
+        
+
+        <script src="script/a.js"></script>
+        <script src="script/nav&scroll.js"></script>
+        
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="terms">
+                    <p>Fortiss, el logo de Fortiss y sus subyacentes son propiedad de Fortiss.Co y de sus respectivos duenos. </p>
+                    <p>Al comprar en Fortiss, usted admite que ha leido y esta de acuerdo con los <a href="templates/terms.html">Terminos y Condiciones</a></p>
+                </div>
+            </div>
+
+            <div class="box__footer">
+                <h2>Compañia</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Servicios</a>              
+                <a href="templates/privacy.html">Politica de Privacidad</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2025 <b>Fortiss Suplementos</b></p>
+        </div>
+    </footer>
+
+
+    </body>
+</html>
