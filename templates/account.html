@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='../base.css'>
+    <link rel="stylesheet" href="../styles/account.css">
+    <title>Fortiss</title>
+</head>
+<body>
+    <div class="microheader">
+        <div class="micrologo" id="micrologo" onclick="home()"></div>
+    </div>
+    
+    <div class="accbody">
+
+        <div class="form_container oculto" id="form1">
+            <h2>Registro</h2>
+            <form id="registerForm" class="registerForm">
+                <input type="text" id="username" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contrasena" required>
+                <button type="submit">Registrar</button>
+            </form>
+            <button class="changeBtn" id="changeBtn" onclick="change()">Ya tiene una? Inicie sesion</button>
+        </div>
+
+        <div class="form_container" id="form2">
+            <h2>Iniciar Sesion</h2>
+            <form id="loginForm" class="loginForm">
+                <input type="text" id="loginUsername" placeholder="Usuario" required>
+                <input type="password" id="loginPassword" placeholder="Contrasena" required>
+                <button type="submit">Iniciar Sesion</button>
+            </form>
+            <button class="changeBtn" id="changeBtn" onclick="change()">No tiene una? Registrese</button>
+        </div>
+
+    </div>
+
+    <script src="../script/a.js"></script>
+    <script src="../script/nav&scroll.js"></script>
+    <script src="../script/accounts.js"></script>
+</body>
+</html> 
